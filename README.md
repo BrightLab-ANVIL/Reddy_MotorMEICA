@@ -7,7 +7,7 @@ Relevant data files can be found on OpenNeuro: https://doi.org/10.18112/openneur
 ### MRI pre-processing and registration
 All anatomical and functional MRI pre-processing and registration scripts can be found at https://github.com/BrightLab-ANVIL/PreProc_BRAIN
 
-Detailed information on tedana and mult-echo fMRI analysis can be found at https://tedana.readthedocs.io
+Detailed information on tedana and multi-echo fMRI analysis can be found at https://tedana.readthedocs.io
 
 ### Motion analysis
 MotionCalc.m: Calculation of Framewise Displacement (FD) and task-correlation of motion
@@ -24,5 +24,5 @@ x.ROIstats.sh: ROI analysis
 SpCorr.R: Spatial correlation analysis
 
 ### Group-level fMRI analysis
-x.GroupLevel.sh: Group-level modeling and clustering
+x.GroupLevel.sh: Group-level modeling
 
