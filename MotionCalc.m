@@ -7,9 +7,9 @@
 % Outputs:
 % (1) Average FD
 % (2) Percent censored volumes at FD > 0.5
-% (3) Correlation of force trace with X-direction motion
+% (3) Correlation of force trace with each direction of motion
 
-function [FDavg, censorPer, Xcorr] = MotionCalc(motion,rForce,lForce)
+function [FDavg, censorPer, corr] = MotionCalc(motion,rForce,lForce)
 
 %% Calculate FD
 % Extract motion parameters
@@ -54,10 +54,13 @@ FDavg = mean(FD);
 censorNo = sum(FD > 0.5);
 censorPer = censorNo/length(FD)*100;
 
-%% Find correlation of X-direction motion with task
+%% Find correlation of each direction of motion with task
 rlForce = rForce + lForce;
 
-Motcorr = corrcoef(x,rlForce,'Rows','pairwise');
-Xcorr = Motcorr(2);
+corr = zeros(1,6);
+for mot = 1:6
+    Motcorr = corrcoef(motion(:,mot),rlForce,'Rows','pairwise');
+    corr(mot) = Motcorr(2);
+end
 
 end
