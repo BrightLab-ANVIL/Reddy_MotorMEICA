@@ -1,7 +1,7 @@
 ## Denoising task-correlated head motion from motor-task fMRI data with multi-echo ICA
-This analysis code is shared alongside the manuscript found here: https://doi.org/10.1101/2023.07.19.549746
+This analysis code is shared alongside the manuscript found here: https://doi.org/10.1162/imag_a_00057
 
-Relevant data files can be found on OpenNeuro: https://doi.org/10.18112/openneuro.ds004662.v1.0.0
+Relevant data files can be found on OpenNeuro: https://doi.org/10.18112/openneuro.ds004662.v1.1.0
 
 ## Code
 ### MRI pre-processing and registration
