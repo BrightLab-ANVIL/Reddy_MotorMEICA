@@ -24,7 +24,7 @@ x.ROIstats.sh: ROI analysis
 SpCorr.R: Spatial correlation analysis
 
 ### Group-level fMRI analysis
-x.GroupLevel.sh: Group-level modeling
+x.GLM_Group.sh: Group-level modeling
 
 x.ROIstats_Group.sh: Group-level ROI analysis
 
